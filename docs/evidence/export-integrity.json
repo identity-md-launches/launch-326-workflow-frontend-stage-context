@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-27T06:27:14.466Z",
+  "assets": 6,
+  "totalBytes": 508788,
+  "checks": [
+    "Exact handoff identifiers and contract set",
+    "Unchanged network and walletAddChain",
+    "Pinned ABI bytes and canonical Keccak",
+    "Complete SHA-256 inventory",
+    "Relative paths, no symlinks, asset count and size limits"
+  ]
+}

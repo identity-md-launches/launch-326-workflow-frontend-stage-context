@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-09-27T06:19:56.612Z",
+  "kind": "Read-only RPC check; no transactions broadcast",
+  "results": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "block": "11791495",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0x6b9141aceec34cc852eb495284ea46ccb210d2a6",
+          "runtimeBytes": 1802
+        },
+        {
+          "name": "HarbergerBillboard",
+          "address": "0x2bd8cc272bb9aaf66d61754b767e1b124e321db6",
+          "runtimeBytes": 3874
+        }
+      ],
+      "token": "0x6B9141aCeEc34cc852eb495284ea46CCB210d2a6",
+      "state": [
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "taxDue": "0",
+      "runwaySeconds": "0"
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111,
+      "block": "11791495",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0x6b9141aceec34cc852eb495284ea46ccb210d2a6",
+          "runtimeBytes": 1802
+        },
+        {
+          "name": "HarbergerBillboard",
+          "address": "0x2bd8cc272bb9aaf66d61754b767e1b124e321db6",
+          "runtimeBytes": 3874
+        }
+      ],
+      "token": "0x6B9141aCeEc34cc852eb495284ea46CCB210d2a6",
+      "state": [
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "taxDue": "0",
+      "runwaySeconds": "0"
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111,
+      "block": "11791495",
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0x6b9141aceec34cc852eb495284ea46ccb210d2a6",
+          "runtimeBytes": 1802
+        },
+        {
+          "name": "HarbergerBillboard",
+          "address": "0x2bd8cc272bb9aaf66d61754b767e1b124e321db6",
+          "runtimeBytes": 3874
+        }
+      ],
+      "token": "0x6B9141aCeEc34cc852eb495284ea46CCB210d2a6",
+      "state": [
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "taxDue": "0",
+      "runwaySeconds": "0"
+    }
+  ]
+}

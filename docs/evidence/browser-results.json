@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-09-27T06:24:17.106Z",
+  "browser": "154.0.8037.0",
+  "scenarios": [
+    "Disconnected + missing wallet; keyboard skip-link focus; five responsive widths; 200% text resize; RTL layout stress; reduced motion; computed contrast; axe",
+    "4902 → exact wallet_addEthereumChain → switch; exact approval spender/amount; keyboard message, approval and buy; all seven app mutations; receipt refresh; holder gating; account/chain/disconnect events; connected axe",
+    "Connect/sign rejection; zero amount; UTF-8 byte limit; max-price rise before payment; decoded simulation revert without signing; insufficient balance; missing code; all RPCs failing",
+    "ABI tamper blocks initialization; reverted receipt retains explorer link and never reports confirmation",
+    "Exhausted deposit projects zero purchase price; existing holder loses edit eligibility; withdrawDeposit respects post-tax bounds"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 1000,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 320,
+      "height": 1000,
+      "horizontalOverflow": false
+    }
+  ],
+  "axe": [
+    {
+      "state": "disconnected, 320px",
+      "violations": []
+    },
+    {
+      "state": "connected holder, all disclosures open",
+      "violations": []
+    }
+  ],
+  "contrast": [
+    {
+      "selector": ".intro > p",
+      "color": "rgb(98, 100, 91)",
+      "background": "rgb(245, 244, 239)",
+      "ratio": 5.46
+    },
+    {
+      "selector": ".board-message",
+      "color": "rgb(245, 244, 239)",
+      "background": "rgb(36, 39, 32)",
+      "ratio": 13.76
+    },
+    {
+      "selector": ".board-badge",
+      "color": "rgb(193, 197, 185)",
+      "background": "rgb(36, 39, 32)",
+      "ratio": 8.62
+    },
+    {
+      "selector": ".board-bottom",
+      "color": "rgb(193, 197, 185)",
+      "background": "rgb(36, 39, 32)",
+      "ratio": 8.62
+    },
+    {
+      "selector": ".field label",
+      "color": "rgb(36, 39, 32)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 15.15
+    },
+    {
+      "selector": ".help",
+      "color": "rgb(98, 100, 91)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 6.01
+    },
+    {
+      "selector": ".connect",
+      "color": "rgb(245, 244, 239)",
+      "background": "rgb(36, 39, 32)",
+      "ratio": 13.76
+    }
+  ]
+}

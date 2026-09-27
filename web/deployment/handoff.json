@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-251-harbergerbillboard",
+  "version": 1,
+  "launchId": "d36ec7ed-8461-4a69-8e70-f964d65d6919",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Billboard (BILL) launch on Sepolia (11155111) through the IdentityMD project factory. Token: LaunchToken (src/LaunchToken.sol), OpenZeppelin ERC20 with name Billboard, symbol BILL, 18 decimals, no constructor arguments; its constructor mints the whole fixed supply of 1,000,000,000 BILL (10^27 minor units) once to msg.sender (the factory) and the contract exposes no mint, burn-by-admin, owner, pause, blocklist, fee or upgrade path. Application: HarbergerBillboard (src/HarbergerBillboard.sol), a single Harberger-taxed billboard whose only constructor argument is the BILL token address ($token, type address). The constructor is nonpayable, makes no external calls, stores the token as an immutable exposed by token(), and the contract holds no BILL at deploy, so the factory keeps the full supply for LP and rewards. HarbergerBillboard has no owner, admin, pause or upgrade path and therefore takes no $owner; it has no payable function and no receive/fallback, so it never holds ETH. Tax is 10% of the self-assessed price per 365 days, accrued per second and burned by transfer to 0x000000000000000000000000000000000000dEaD; payouts are pull-based via withdraw(). Fixed constants: TAX_RATE_BPS 1000, TAX_PERIOD 365 days, MIN_PRICE 1e18, MAX_PRICE 1e27. Pool: no hook, BILL paired against native ETH (zero address), fee 3000, tickSpacing 60; initialPrice is sqrtPriceX96 for a 1:1 price and is used only by legacy policies, since the pinned policy's initialMarketCapWei sets the effective opening price. Players obtain BILL by swapping Sepolia ETH in this pool; every paying action in the app is approve + safeTransferFrom. Toolchain: solc 0.8.26, optimizer 200 runs, evm_version paris, bytecode_hash none, cbor_metadata false. ABI exports: docs/abi/LaunchToken.json and docs/abi/HarbergerBillboard.json. These notes are descriptive only; supply, allocations, owner and chain come from the pinned launch policy.",
+    "token": {
+      "name": "Billboard",
+      "symbol": "BILL",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "HarbergerBillboard",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x9052725df3e79e08cea359d20014b8377f2b15bd56181e654c21f0ff9c32ccde",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0x6b9141aceec34cc852eb495284ea46ccb210d2a6",
+      "blockNumber": 11791286,
+      "creationCodeHash": "0d3c16b82457ea89a0aaa96635414ac01c8d9578c1526a0a5a94c667fd742400"
+    },
+    {
+      "name": "HarbergerBillboard",
+      "txHash": "0x9052725df3e79e08cea359d20014b8377f2b15bd56181e654c21f0ff9c32ccde",
+      "abiHash": "406f9ec7f7b79216d7a65b79efd46872f363b8c656177fb9729972491b82c560",
+      "address": "0x2bd8cc272bb9aaf66d61754b767e1b124e321db6",
+      "blockNumber": 11791286,
+      "creationCodeHash": "ede89c2e321342cc6fa5ce8c3af2223530a57c591f37aa48f2ce9f1bf443bea6"
+    }
+  ],
+  "sourceCommit": "ea1cae9fa0e2327dc4478d2fb66cbbc90b150177",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "521cdf22296af4e3bd07376d18c8652574dc1dc1434fc30aa667d77fcbc93f24"
+}

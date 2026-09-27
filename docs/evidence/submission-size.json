@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-27T06:29:28.268732+00:00",
+  "limitBytes": 8388608,
+  "candidateFiles": 478,
+  "candidateSnapshotBytes": 5412375,
+  "addedFiles": 44,
+  "addedBytes": 2546707,
+  "submodules": 0,
+  "protectedTrackedFilesChanged": false,
+  "gitCommit": "Blocked: repository .git is mounted read-only",
+  "measurement": "All tracked plus unignored candidate files, including this report; raw bytes before Git compression. No Git bundle created."
+}

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-27T06:24:16.624Z",
+  "errors": [],
+  "failedRequests": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "kind": "Live public RPC browser read; no wallet, mocks, or transactions",
+  "state": "Read at block 11,791,517 · refreshes every 20 seconds\n\nRefresh state\n↻",
+  "display": "Purchase price\n0 BILL\nOnly your deposit is paid\nTax deposit\n0 BILL\n0 BILL accrued tax\nAnnual tax\n10%\nOf the asking price · burned\nTime remaining\n0s\nEstimated until foreclosure"
+}
